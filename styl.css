@@ -1,0 +1,221 @@
+* {
+    margin: none;
+    padding: none;
+    overflow: auto;
+    
+
+}
+body{
+  overflow-x: hidden;
+}
+
+
+
+.header{
+    padding: 40px 40px;
+    display: flex;
+    gap: 50px;
+    
+    
+}
+
+.header img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: none;
+    display: flex;
+    
+}
+
+.sawir-1{
+     border: 1px solid gray;
+     
+}
+.sawir-2{
+    background-color: gray;
+    display: flex;
+    width: 600px;
+    height: 700px;
+    border-radius: 50;
+    
+
+    }
+
+.sawir-2 img{
+    width: 400px;
+    height: 250px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.text{
+    margin-left: 290PX;
+    margin-top: -20px;
+}
+
+.icon i{
+   color: orange;
+   font-weight: bolder;
+   gap: 200px;
+  
+ 
+}
+
+.list{
+    margin-top: 20px;
+    
+}
+
+.list-1{
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+    
+}
+
+.list-2{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+.size-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.size {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  color: #888;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.size:hover {
+  border-color: #ff5c33;
+  color: #ff5c33;
+}
+
+.size.active {
+  border: 1px solid #ff5c33;
+  color: #ff5c33;
+  font-weight: bold;
+}
+
+
+.texes span{
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 30px;
+    
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.quantity {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.qty-btn {
+  background: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #444;
+}
+
+.qty-number {
+  padding: 10px 15px;
+  min-width: 30px;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.buy-now {
+  background-color: #e63900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background: white;
+  color: #e63900;
+  border: 1px solid #e63900;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sawir-2 img {
+        width: 100%;
+        align-items: center;
+       
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .list-1, .list-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        margin: 10px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .size {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .buy-now, .add-to-cart {
+        width: 100%;
+        text-align: center;
+    }
+
+    .qty-btn, .qty-number {
+        padding: 8px;
+    }
+
+    .header img {
+        max-width: 270px;
+        margin-left: 10px;
+    }
+
+    .sawir-2 {
+        max-width: 100%;
+    }
+}
